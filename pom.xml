@@ -29,7 +29,7 @@
   <name>Vert.x Redis Client</name>
 
   <properties>
-    <stack.version>4.3.3-SNAPSHOT</stack.version>
+    <stack.version>4.3.3</stack.version>
     <jar.manifest>${project.basedir}/src/main/resources/META-INF/MANIFEST.MF</jar.manifest>
   </properties>
 
