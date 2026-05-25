@@ -24,7 +24,6 @@ import io.vertx.junit5.VertxTestContext;
 import io.vertx.redis.client.Command;
 import io.vertx.redis.client.Redis;
 import io.vertx.redis.client.RedisAPI;
-import io.vertx.redis.client.RedisConnection;
 import io.vertx.redis.client.RedisOptions;
 import io.vertx.redis.client.Request;
 import io.vertx.redis.client.impl.PooledRedisConnection;
