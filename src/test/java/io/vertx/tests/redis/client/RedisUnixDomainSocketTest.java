@@ -9,6 +9,7 @@ import io.vertx.redis.client.RedisOptions;
 import io.vertx.redis.client.Request;
 import io.vertx.tests.redis.containers.RedisStandalone;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.EnabledForJreRange;
 import org.junit.jupiter.api.condition.EnabledOnOs;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.extension.RegisterExtension;
@@ -17,11 +18,13 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.condition.JRE.JAVA_16;
 import static org.junit.jupiter.api.condition.OS.LINUX;
 
 @ExtendWith(VertxExtension.class)
 @Testcontainers
 @EnabledOnOs({LINUX})
+@EnabledForJreRange(min = JAVA_16)
 public class RedisUnixDomainSocketTest {
 
   @Container
